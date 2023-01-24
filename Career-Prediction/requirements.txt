@@ -13,4 +13,4 @@ flasgger
 streamlit
 seaborn
 scikit-learn
-
+openpyxl
