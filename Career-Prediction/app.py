@@ -10,7 +10,7 @@ import streamlit as st
 from db import *
 
 
-pickleFile=open("C:\Users\91908\Desktop\Career-Prediction\weights.pkl","rb")
+pickleFile=open("C:\\Users\\91908\\Desktop\\Career-Prediction\\weights.pkl","rb")
 regressor=pickle.load(pickleFile) # our model
 
 # **2. Loading Dataset**
