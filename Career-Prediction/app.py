@@ -10,7 +10,7 @@ import streamlit as st
 from db import *
 
 
-pickleFile=open("weights.pkl","rb")
+pickleFile=open("weights.dat","rb")
 try:
   while True:
     regressor=pickle.load(pickleFile) # our model
