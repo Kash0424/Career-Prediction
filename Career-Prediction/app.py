@@ -11,7 +11,11 @@ from db import *
 
 
 pickleFile=open("weights.pkl","rb")
-regressor=pickle.load(pickleFile) # our model
+try:
+  while True:
+    regressor=pickle.load(pickleFile) # our model
+except EOFError:
+    pickleFile.close()
 
 # **2. Loading Dataset**
 
